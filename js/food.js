@@ -37,12 +37,69 @@ $(function() {
 
 		render: function(){
 			// Create the HTML
-			this.$el.html()
-			this.$('input').prop()
-			// Returning the object is good practice tht makes chaining possible
+			this.$el.html('<input type="checkbox" value="1" name="' +
+				this.model.get('title') + '" /> ' +
+				this.model.get('title') + '<span>$' +
+				this.model.get('price') + '</span>');
+			this.$('input').prop('checked', this.model.get('checked'));
+
+			// Returning the object is a good practice
+			// that makes chaining possible
 			return this;
 		}
-	})
 
+		toggleService: function(){
+			this.model.toggle();
+		}
+	});
+
+	var App = Backbone.View.extend({
+		// Base the view on an existing element
+		el: $('#main'),
+
+		initialize: function(){
+
+			// Cache these selectors
+			this.total = $('#total span');
+			this.list = $('#services');
+
+			// Listen for the change event on the collection.
+			// This is equivalent to listening on every one of the 
+			// service objects in the collection.
+			this.listenTo(services, 'change', this.render);
+
+			// Create views for every one of the services in the
+			// collection and add them to the page
+
+			services.each(function(service){
+
+				var view = new ServiceView({ model: service });
+				this.list.append(view.render().el);
+
+			}, this);	// "this" is the context in the callback
+		},
+
+		render: function(){
+
+			// Calculate the total order amount by agregating
+			// the prices of only the checked elements
+
+			var total = 0;
+
+			_.each(services.getChecked(), function(elem){
+				total += elem.get('price');
+			});
+
+			// Update the total price
+			this.total.text('$'+total);
+
+			return this;
+		}
+	});
+
+	new App();
+
+
+	})
 
 });
