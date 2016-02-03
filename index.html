@@ -21,36 +21,60 @@
 
 	<div class="food-pic"></div>
 
+	<div class="container-fluid"> <!-- do i need this if i will stack the boxes? -->
+		<div class="row">
+			<!-- FOOD SEARCH SECTION -->
+			<section class="search"> <!-- should section go before or after col-md-6 -->
+				<div class="col-md-6">
+					<p>Search for the food name. Select the food you ate today by clicking 'Add food'</p>
+					<form action="" class="searchform">
+						<input type="text" id="searchfield" class="searchfield" placeholder="Your food">
+						<button type="submit" id="searchBtn" class="searchBtn">Search</button>
+						<span id="searchformAlert" class="searchformAlert"></span>
+					</form>
+					<h4>Search Result</h4>
+					<ul class="search-result"></ul>
+				</div>
+			</section>
 
-	<div class="row">
-		<!-- FOOD SEARCH SECTION -->
-		<section class="section-search"> <!-- should section go before or after col-md-6 -->
 			<div class="col-md-6">
-				<p>Please search with the food name. Select the food you ate today then click 'Add food'</p>
-				<form action="" class="searchform">
-					<input type="text" id="searchfield" class="searchfield" placeholder="Your food">
-					<button type="submit" id="searchBtn" class="searchBtn">Search</button>
-					<span id="searchformAlert" class="searchformAlert"></span>
-				</form>
-				<h4>Search Result</h4>
-				<ul class="search-result"></ul>
-			</div>
-		</section>
-
-		<section class="total">
-			<div class="container-fluid"> <!-- do i need this if i will stack the boxes? -->
-				<div class="row">
-					<div class="col-md-6">
-						<div class="food-search">
-							<h1 class="pageTitle">The Calorie Tracker</h1>
+				<section class="total">
+					<div class="col-md-12">
+						<div class="cal-total">
+							<h1 class="page-title">The Calorie Tracker</h1>
 							<div id="total" class="total-cal"></div>
 							<div class="total-cal-unit">Calories</div>
-							</div>
 						</div>
 					</div>
-				</div>
+				</section>
+
+				<section class="list">
+					<div class="col-md-12">
+						<div id="addFood" class="addFood-div">
+							<h3>Your Selected Food</h3>
+							<div>
+								<h4>Food name:</h4>
+								<div id="FoodName">No selected food</div>
+							</div>
+							<div>
+								<h4>Calories:</h4>
+								<div id="FoodCal">No selected food</div>
+							</div>
+							<button id="foodSubmit" class="foodSubmitBtn" disabled>Add food</button>
+						</div>
+						<h4>List of Today's Food:</h4>
+						<span id="resultAlert" class="searchformAlert">You didn't add any food yet.</span>
+						<div class="foodsList">
+							<script id="foodsListTemplate" type="text/template">
+								<span class="searchName"><%= title %></span>
+								<span class="searchCal"><%= calorie %> Cal.</span>
+								<span class="delete">Delete</span>
+							</script>
+						</div>
+					</div>
+				</section>
 			</div>
-		</section>
+		</div>
 	</div>
 
 

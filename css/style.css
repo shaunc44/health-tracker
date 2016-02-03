@@ -23,9 +23,9 @@ button:disabled {
 	background: #dddddd;
 }
 
-.hero {
+.total {
 	text-align: center;
-	background: url(../img/hero-background-sm.jpg);
+	background: url(../img/food.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
 	min-height: 500px;
@@ -41,7 +41,7 @@ button:disabled {
 	transform: translate(-50%, 0);
 }
 
-.hero-div {
+.cal-total {
 	position: absolute;
 	width: 100%;
 	text-align: center;
@@ -66,7 +66,7 @@ button:disabled {
 	padding: 20px 0 40px;
 }
 
-.section-search {
+.search {
 	background: #ffbc3d;
 	padding: 2em 1em;
 }
@@ -120,7 +120,7 @@ button:disabled {
 	display: block;
 }
 
-.section-list {
+.list {
 	background: #ffbc3d;
 	padding: 1em;
 }
