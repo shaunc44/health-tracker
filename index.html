@@ -21,39 +21,37 @@
 
 	<div class="food-pic"></div>
 
-	<!-- FOOD SEARCH SECTION -->
-	<section class="section-search">
-		<div class="row">
-			<p>Please search with the food name. Select the food you eat today then click 'Add food'</p>
-			<form action="" class="searchform">
-				<input type="text" id="searchfield" class="searchfield" placeholder="Your food">
-				<button type="submit" id="searchBtn" class="searchBtn">Search</button>
-				<span id="searchformAlert" class="searchformAlert"></span>
-			</form>
-			<h4>Search Result</h4>
-			<ul class="search-result"></ul>
-		</div>
-	</section>
 
+	<div class="row">
+		<!-- FOOD SEARCH SECTION -->
+		<section class="section-search"> <!-- should section go before or after col-md-6 -->
+			<div class="col-md-6">
+				<p>Please search with the food name. Select the food you ate today then click 'Add food'</p>
+				<form action="" class="searchform">
+					<input type="text" id="searchfield" class="searchfield" placeholder="Your food">
+					<button type="submit" id="searchBtn" class="searchBtn">Search</button>
+					<span id="searchformAlert" class="searchformAlert"></span>
+				</form>
+				<h4>Search Result</h4>
+				<ul class="search-result"></ul>
+			</div>
+		</section>
 
-
-
-
-	<section class="total">
-		<div class="container-fluid"> <!-- do i need this if i will stack the boxes? -->
-			<div class="row">
-				<div class="col-md-6">
-					<div class="food-search">
-						<h1 class="pageTitle">The Calorie Tracker</h1>
-						<div id="total" class="total-cal"></div>
-						<div class="total-cal-unit">Calories</div>
+		<section class="total">
+			<div class="container-fluid"> <!-- do i need this if i will stack the boxes? -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="food-search">
+							<h1 class="pageTitle">The Calorie Tracker</h1>
+							<div id="total" class="total-cal"></div>
+							<div class="total-cal-unit">Calories</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-
+		</section>
+	</div>
 
 
 </body>
