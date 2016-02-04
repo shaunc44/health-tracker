@@ -19,9 +19,9 @@
 
 <body>
 
-	<div class="food-pic"></div>
+	<!--<div class="food-pic"></div> -->
 
-	<div class="container-fluid"> <!-- do i need this if i will stack the boxes? -->
+	<div class="container-fluid food-pic"> <!-- do i need this if i will stack the boxes? -->
 		<div class="row">
 			<!-- FOOD SEARCH SECTION -->
 			<section class="search"> <!-- should section go before or after col-md-6 -->
@@ -37,6 +37,7 @@
 				</div>
 			</section>
 
+			<!-- CALORIE TOTAL SECTION -->
 			<div class="col-md-6">
 				<section class="total">
 					<div class="col-md-12">
@@ -48,6 +49,7 @@
 					</div>
 				</section>
 
+			<!-- FOOD LIST SECTION -->
 				<section class="list">
 					<div class="col-md-12">
 						<div id="addFood" class="addFood-div">
@@ -77,6 +79,18 @@
 		</div>
 	</div>
 
+	<!-- JAVASCRIPT SECTION -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/food.js"></script>
+	<script src="js/food-collection.js"></script>
+	<script src="js/food-view.js"></script>
+	<script src="js/views/foods-view.js"></script> <!-- Do I need this??? -->
+	<script src="js/search.js"></script>
+	<script src="js/app.js"></script> <!-- Do I need this??? -->
 
 </body>
 
