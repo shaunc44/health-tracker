@@ -19,13 +19,13 @@
 
 <body>
 
-	<!--<div class="food-pic"></div> -->
-
-	<div class="container-fluid food-pic"> <!-- do i need this if i will stack the boxes? -->
+	<div class="container-fluid food-pic">
 		<div class="row">
+
+
 			<!-- FOOD SEARCH SECTION -->
-			<section class="search"> <!-- should section go before or after col-md-6 -->
-				<div class="col-md-6">
+			<div class="col-md-6">
+				<section class="search"> <!-- should section go before or after col-md-6 -->
 					<p>Search for the food name. Select the food you ate today by clicking 'Add food'</p>
 					<form action="" class="searchform">
 						<input type="text" id="searchfield" class="searchfield" placeholder="Your food">
@@ -34,24 +34,22 @@
 					</form>
 					<h4>Search Result</h4>
 					<ul class="search-result"></ul>
-				</div>
-			</section>
+				</section>
+			</div>
+
 
 			<!-- CALORIE TOTAL SECTION -->
 			<div class="col-md-6">
-				<section class="total">
-					<div class="col-md-12">
-						<div class="cal-total">
-							<h1 class="page-title">The Calorie Tracker</h1>
-							<div id="total" class="total-cal"></div>
-							<div class="total-cal-unit">Calories</div>
-						</div>
+				<section class="total col-md-6">
+					<div class="cal-total">
+						<h1 class="page-title">The Calorie Tracker</h1>
+						<div id="total" class="total-cal"></div>
+						<div class="total-cal-unit">Calories</div>
 					</div>
 				</section>
-
 			<!-- FOOD LIST SECTION -->
 				<section class="list">
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div id="addFood" class="addFood-div">
 							<h3>Your Selected Food</h3>
 							<div>
@@ -75,6 +73,8 @@
 						</div>
 					</div>
 				</section>
+			</div>
+
 			</div>
 		</div>
 	</div>
