@@ -45,7 +45,7 @@ button:disabled {
 }
 
 .cal-total {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	text-align: center;
 	padding: 100px 10px;
@@ -124,12 +124,12 @@ button:disabled {
 }
 
 .list {
-	background: #ffbc3d;
+	/*background: #ffbc3d;*/
 	padding: 1em;
 }
 
 .addFood-div {
-	background: #fff;
+	/*background: #fff;*/
 	padding: 0.5em 2em 2em 2em;
 	text-align: center;
 	margin-bottom: 2em;
