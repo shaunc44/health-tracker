@@ -23,6 +23,10 @@ button:disabled {
 	background: #dddddd;
 }
 
+body {
+	margin: 0;
+}
+
 .row {
 	background: url(../img/food.jpg);
 	background-size: 100% 100%;
@@ -46,6 +50,7 @@ button:disabled {
 
 .cal-total {
 	position: relative;
+	/*float: left;*/
 	width: 100%;
 	text-align: center;
 	padding: 100px 10px;
@@ -72,6 +77,7 @@ button:disabled {
 .search {
 	/*background: #ffbc3d;*/
 	padding: 2em 1em;
+	float: left;
 }
 
 .searchform {
