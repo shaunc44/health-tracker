@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS LINKS -->
-	<!--  <link rel="stylesheet" href="css/bootstrap.min.css">  -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- JASMINE CSS & JAVASCRIPT -->
 </head>
@@ -22,12 +22,14 @@
 	<div class="container-fluid food-pic">
 		<div class="row">
 
-			<!-- FOOD SEARCH SECTION -->
+
+			<!-- LEFT HALF OF PAGE -->
 			<div class="col-md-6">
-				<section class="search"> <!-- should section go before or after col-md-6 -->
-					<p>Search for the food name. Select the food you ate today by clicking 'Add food'</p>
+				<!-- SEARCH SECTION -->
+				<section class="search">
+					<h1>The Calorie Tracker</h1>
 					<form action="" class="searchform">
-						<input type="text" id="searchfield" class="searchfield" placeholder="Your food">
+						<input type="text" id="searchfield" class="searchfield" placeholder="Enter food name here">
 						<button type="submit" id="searchBtn" class="searchBtn">Search</button>
 						<span id="searchformAlert" class="searchformAlert"></span>
 					</form>
@@ -36,45 +38,46 @@
 				</section>
 			</div>
 
-			<!-- CALORIE TOTAL SECTION -->
+
+			<!-- RIGHT HALF OF PAGE -->
 			<div class="col-md-6">
-				<section class="total col-md-6">
+				<!-- CALORIE TOTAL SECTION -->
+				<section class="total col-md-12">
 					<div class="cal-total">
-						<h1 class="page-title">The Calorie Tracker</h1>
+						<div class="total-cal-unit"><h3>Total Calories</h3></div>
 						<div id="total" class="total-cal"></div>
-						<div class="total-cal-unit">Calories</div>
 					</div>
 				</section>
-			<!-- FOOD LIST SECTION -->
-				<section class="list">
-					<div class="col-md-6">
-						<div id="addFood" class="addFood-div">
-							<h3>Your Selected Food</h3>
-							<div>
-								<h4>Food name:</h4>
-								<div id="FoodName">No selected food</div>
-							</div>
-							<div>
-								<h4>Calories:</h4>
-								<div id="FoodCal">No selected food</div>
-							</div>
-							<button id="foodSubmit" class="foodSubmitBtn" disabled>Add food</button>
+				<!-- FOOD LIST SECTION -->
+				<section class="list col-md-12">
+					<div id="addFood" class="addFood-div">
+						<h3>Your Selected Food</h3>
+						<div>
+							<h4>Food name:</h4>
+							<div id="FoodName">No selected food</div>
 						</div>
-						<h4>List of Today's Food:</h4>
-						<span id="resultAlert" class="searchformAlert">You didn't add any food yet.</span>
-						<div class="foodsList">
-							<script id="foodsListTemplate" type="text/template">
-								<span class="searchName"><%= title %></span>
-								<span class="searchCal"><%= calorie %>Cal.</span>
-								<span class="delete">Delete</span>
-							</script>
+						<div>
+							<h4>Calories:</h4>
+							<div id="FoodCal">No selected food</div>
 						</div>
+						<button id="foodSubmit" class="foodSubmitBtn" disabled>Add food</button>
+					</div>
+					<h4>List of Today's Food:</h4>
+					<span id="resultAlert" class="searchformAlert">You didn't add any food yet.</span>
+					<div class="foodsList">
+						<script id="foodsListTemplate" type="text/template">
+							<span class="searchName"><%= title %></span>
+							<span class="searchCal"><%= calorie %>Cal.</span>
+							<span class="delete">Delete</span>
+						</script>
 					</div>
 				</section>
 			</div>
 
+
 		</div>
 	</div>
+
 
 	<!-- JAVASCRIPT SECTION -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
