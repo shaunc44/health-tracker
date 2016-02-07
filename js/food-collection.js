@@ -26,7 +26,7 @@ var App = App || {};
 		}
 	});
 
-	// Create Add food View
+	// Create Add food View - adds food in lower right part of page
 	App.Views.AddFood = Backbone.View.extend({
 		el: '#addFood',
 

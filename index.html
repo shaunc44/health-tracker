@@ -33,6 +33,7 @@
 						<button type="submit" id="searchBtn" class="searchBtn">Search</button>
 						<span id="searchformAlert" class="searchformAlert"></span>
 					</form>
+					<!-- WHEN CLICKED RESULTS SHOULD MOVE TO RT SIDE; HOW??? -->
 					<h4>Search Result</h4>
 					<ul class="search-result"></ul>
 				</section>
@@ -44,13 +45,16 @@
 				<!-- CALORIE TOTAL SECTION -->
 				<section class="total col-md-12">
 					<div class="cal-total">
-						<div class="total-cal-unit"><h3>Total Calories</h3></div>
+						<div class="total-cal-unit"><h3>Today's Calories</h3></div>
 						<div id="total" class="total-cal"></div>
 					</div>
 				</section>
 				<!-- FOOD LIST SECTION -->
 				<section class="list col-md-12">
+
+					<!-- REMOVE THIS SECTION -->
 					<div id="addFood" class="addFood-div">
+						<!--
 						<h3>Your Selected Food</h3>
 						<div>
 							<h4>Food name:</h4>
@@ -60,8 +64,11 @@
 							<h4>Calories:</h4>
 							<div id="FoodCal">No selected food</div>
 						</div>
+						-->
 						<button id="foodSubmit" class="foodSubmitBtn" disabled>Add food</button>
 					</div>
+
+
 					<h4>List of Today's Food:</h4>
 					<span id="resultAlert" class="searchformAlert">You didn't add any food yet.</span>
 					<div class="foodsList">
