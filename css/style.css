@@ -40,9 +40,8 @@ body {
 	width: 100%;
 }
 
-.total {
-	height: 100%;
-	/*min-height: 500px;*/
+#total {
+	height: 10%;
 }
 
 .list {
