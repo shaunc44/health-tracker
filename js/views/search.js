@@ -24,7 +24,7 @@ var App = App || {};
 					self.element.searchformAlert.text('Please insert search keyword.');
 					return;
 				}
-				// Remove the message that tell user to type a keyword
+				// Remove the message that tells user to type a keyword
 				self.element.searchformAlert.text('');
 				// Firing an AJAX request
 				self.getAJAX(keyword);
@@ -41,7 +41,8 @@ var App = App || {};
 				type: 'GET',
 				dataType: 'json',
 				cache: true,
-				url: 'https://api.nutritionix.com/v1_1/search/' + keyword +'?results=0%3A10&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Cnf_calories&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'
+				url: 'https://api.nutritionix.com/v1_1/search/'+ keyword +'?results=0%3A10&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Cnf_calories&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'
+				/*url: 'https://api.nutritionix.com/v1_1/search/'+keyword+'?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'*/
 			}).done(function(data) {
 				var food;
 				var addBtn = $('#foodSubmit');
@@ -49,8 +50,8 @@ var App = App || {};
 
 				// If no food found then tell the user.
 				if (data.hits.length <= 0) {
-					var seachNotfound = '<p>Not found any food from keyword: ' + keyword + '</p>';
-					searchUL.html(seachNotfound);
+					var searchNotfound = '<p>Not found any food from keyword: ' + keyword + '</p>';
+					searchUL.html(searchNotfound);
 					return;
 				}
 
@@ -71,7 +72,7 @@ var App = App || {};
 					return;
 				});
 			}).fail(function(){
-				// If AJAX request is fail then tell the user.
+				// If AJAX request fails then tell the user.
 				searchUL.html('<p>There\'re some error getting food information. Please try again later.</p>');
 			});
 		}
