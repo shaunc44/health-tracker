@@ -41,7 +41,7 @@ var App = App || {};
 				type: 'GET',
 				dataType: 'json',
 				cache: true,
-				url: 'https://api.nutritionix.com/v1_1/search/'+ keyword +'?results=0%3A10&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Cnf_calories&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'
+				url: 'https://api.nutritionix.com/v1_1/search/'+keyword+'?results=0%3A10&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Cnf_calories&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'
 				/*url: 'https://api.nutritionix.com/v1_1/search/'+keyword+'?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'*/
 			}).done(function(data) {
 				var food;
@@ -57,7 +57,11 @@ var App = App || {};
 
 				// Iterate through each food object and get the data from it
 				for (var i = 0; i < data.hits.length; i++) {
-					searchItemHTML += '<li class="searchItem"><span class="searchName">' + data.hits[i].fields.item_name + ', ' + data.hits[i].fields.brand_name + '</span> <span class="searchCal">' + Math.round(data.hits[i].fields.nf_calories) + ' Cal. </span></li>';
+					searchItemHTML += '<li class="searchItem"><span class="searchName">' + data.hits[i].fields.item_name +
+						', ' + data.hits[i].fields.brand_name +
+						'</span><span class="searchCal">' +
+						Math.round(data.hits[i].fields.nf_calories) +
+						' Cal. </span></li>';
 				}
 				// Insert to the DOM.
 				searchUL.html(searchItemHTML);
