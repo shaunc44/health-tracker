@@ -127,10 +127,11 @@ body {
 
 .search-result li {
 	background: rgba(255, 255, 255, 0.6);
-	padding: 1em;
+	padding: 0.1em;
 	margin-bottom: 0.4em;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
+	text-align: left;
 }
 
 .search-result li:hover {
@@ -138,12 +139,13 @@ body {
 }
 
 .searchName {
-	display: block;
+	display: inline-block;
 	font-weight: 500;
 }
 
 .searchCal {
-	display: block;
+	display: inline-block;
+	float: right;
 }
 
 .addFood-div {
