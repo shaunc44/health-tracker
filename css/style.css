@@ -140,6 +140,7 @@ body {
 
 .searchName {
 	display: inline-block;
+	width: 85%;
 	font-weight: 500;
 }
 
