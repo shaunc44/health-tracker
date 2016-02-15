@@ -19,7 +19,7 @@ var App = App || {};
 				e.preventDefault();
 				// Preparing the keyword
 				var keyword = $.trim(self.element.searchKey.val()).toLowerCase();
-				// Check if user provide a keyword or not
+				// Check if user provide a keyword or not; This doesn't work
 				if (!keyword) {
 					self.element.searchformAlert.text('Please insert search keyword.');
 					return;
@@ -42,13 +42,13 @@ var App = App || {};
 				dataType: 'json',
 				cache: true,
 				url: 'https://api.nutritionix.com/v1_1/search/'+keyword+'?results=0%3A10&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Cnf_calories&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'
-				/*url: 'https://api.nutritionix.com/v1_1/search/'+keyword+'?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'*/
+
 			}).done(function(data) {
 				var food;
 				var addBtn = $('#foodSubmit');
 				var searchItemHTML = '';
 
-				// If no food found then tell the user.
+				// tell the user if no food found
 				if (data.hits.length <= 0) {
 					var searchNotfound = '<p>Not found any food from keyword: ' + keyword + '</p>';
 					searchUL.html(searchNotfound);
@@ -67,6 +67,7 @@ var App = App || {};
 				searchUL.html(searchItemHTML);
 				var searchItem = $('.searchItem');
 				// Listen to an event. If user clicked on the targeted element then get the element's value
+				// This is where the food is uploaded to ADD FOOD
 				searchItem.on('click', function(){
 					addBtn.prop('disabled', false);
 					var name = $(this).find('.searchName').text();
@@ -77,7 +78,7 @@ var App = App || {};
 				});
 			}).fail(function(){
 				// If AJAX request fails then tell the user.
-				searchUL.html('<p>There\'re some error getting food information. Please try again later.</p>');
+				searchUL.html('<p>There is an error getting food information. Please try again later.</p>');
 			});
 		}
 	});

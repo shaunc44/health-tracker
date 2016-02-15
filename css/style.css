@@ -127,11 +127,14 @@ body {
 
 .search-result li {
 	background: rgba(255, 255, 255, 0.6);
-	padding: 0.1em;
+	padding: 0.2em;
 	margin-bottom: 0.4em;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 	text-align: left;
+	color: #660066;
+	text-shadow: none;
+	font-weight: 900;
 }
 
 .search-result li:hover {
@@ -141,7 +144,6 @@ body {
 .searchName {
 	display: inline-block;
 	width: 85%;
-	font-weight: 500;
 }
 
 .searchCal {

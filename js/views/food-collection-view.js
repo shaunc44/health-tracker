@@ -13,12 +13,12 @@ var App = App || {};
 		initialize: function(){
 			this.collection.on('add', this.addOne, this);
 		},
-		// Method for render unordered list of selected food. Use for initiating the app with data from localstorage
+		// Method to render unordered list of selected food. Use for initiating the app with data from localstorage
 		render: function(){
 			this.collection.each(this.addOne, this);
 			return this;
 		},
-		// Method for add new model and append to the DOM.
+		// Method to add new model and append to the DOM.
 		addOne: function(food){
 			$('#resultAlert').hide();
 			var foodView = new App.Views.Food ({model: food});

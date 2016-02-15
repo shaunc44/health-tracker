@@ -33,9 +33,9 @@ var App = App || {};
 			this.model.destroy();
 		},
 
-		// method for remove the element from the DOM.
+		// method for remove the element from the DOM
 		remove: function(){
-			// if no food element left then show message to tell user to add food.
+			// if no food element left then show user message to add food.
 			if (this.$el.siblings().length === 0) {
 				$('#resultAlert').show();
 			}
