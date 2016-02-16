@@ -3,29 +3,6 @@ var App = App || {};
 
 (function () {
 
-
-	// Create Foods Collection View
-	App.Views.Foods = Backbone.View.extend({
-		tagName: 'ul',
-		className: 'selected-result',
-
-		// listen to collection add event. Then call a method to create an element and append to the DOM.
-		initialize: function(){
-			this.collection.on('add', this.addOne, this);
-		},
-		// Method to render unordered list of selected food. Use for initiating the app with data from localstorage
-		render: function(){
-			this.collection.each(this.addOne, this);
-			return this;
-		},
-		// Method to add new model and append to the DOM.
-		addOne: function(food){
-			$('#resultAlert').hide();
-			var foodView = new App.Views.Food ({model: food});
-			this.$el.append(foodView.render().el);
-		}
-	});
-
 	// Create Add food View - adds food in lower right part of page
 	App.Views.AddFood = Backbone.View.extend({
 		el: '#addFood',
@@ -54,7 +31,30 @@ var App = App || {};
 		}
 	});
 
-	// Create Sum total Calorie View
+	// Create Foods Collection View
+	App.Views.Foods = Backbone.View.extend({
+		tagName: 'ul',
+		className: 'selected-result',
+
+		// listen to collection add event. Then call a method to create an element and append to the DOM.
+		initialize: function(){
+			this.collection.on('add', this.addOne, this);
+		},
+		// Method to render unordered list of selected food. Use for initiating the app with data from localstorage
+		render: function(){
+			this.collection.each(this.addOne, this);
+			return this;
+		},
+		// Method to add new model and append to the DOM.
+		addOne: function(food){
+			$('#resultAlert').hide();
+			var foodView = new App.Views.Food ({model: food});
+			this.$el.append(foodView.render().el);
+		}
+	});
+
+
+	// Create Sum Calorie Total View
 	App.Views.Total = Backbone.View.extend({
 		el: '#total',
 

@@ -41,8 +41,8 @@ var App = App || {};
 				type: 'GET',
 				dataType: 'json',
 				cache: true,
-				url: 'https://api.nutritionix.com/v1_1/search/'+keyword+'?results=0%3A10&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Cnf_calories&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'
-
+				url: 'https://api.nutritionix.com/v1_1/search/'+ keyword +
+				'?results=0%3A10&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Cnf_calories&appId=b43c65b0&appKey=80f926683602d6e1f396a38fb8fb3895'
 			}).done(function(data) {
 				var food;
 				var addBtn = $('#foodSubmit');
@@ -56,6 +56,7 @@ var App = App || {};
 				}
 
 				// Iterate through each food object and get the data from it
+				// And create the searchItem and searchName CLASSES ***
 				for (var i = 0; i < data.hits.length; i++) {
 					searchItemHTML += '<li class="searchItem"><span class="searchName">' + data.hits[i].fields.item_name +
 						', ' + data.hits[i].fields.brand_name +
@@ -67,6 +68,7 @@ var App = App || {};
 				searchUL.html(searchItemHTML);
 				var searchItem = $('.searchItem');
 				// Listen to an event. If user clicked on the targeted element then get the element's value
+
 				// This is where the food is uploaded to ADD FOOD
 				searchItem.on('click', function(){
 					addBtn.prop('disabled', false);
