@@ -184,14 +184,16 @@ body {
 }
 
 .selected-item {
+	display: inline-block;
+	text-align: left;
 	background: rgba(255, 255, 255, 0.6);
-	padding: 1em;
+	padding: 0.2em;
 	margin-bottom: 0.4em;
 	transition: all 0.3s ease 0s;
+	width: 100%;
 }
 
 .delete {
-	display: block;
 	text-align: right;
 	color: #af282e;
 	cursor: pointer;
