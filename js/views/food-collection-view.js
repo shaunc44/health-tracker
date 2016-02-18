@@ -3,7 +3,9 @@ var App = App || {};
 
 (function () {
 
+
 	// Create Add food View - adds food in lower right part of page
+	// Try to remove this view and connect searchItem.on from search.js to the App.Views.Foods view
 	App.Views.AddFood = Backbone.View.extend({
 		el: '#addFood',
 
@@ -30,6 +32,7 @@ var App = App || {};
 			food.save();
 		}
 	});
+
 
 	// Create Foods Collection View
 	App.Views.Foods = Backbone.View.extend({

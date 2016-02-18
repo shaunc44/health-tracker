@@ -69,8 +69,9 @@ var App = App || {};
 				var searchItem = $('.searchItem');
 				// Listen to an event. If user clicked on the targeted element then get the element's value
 
-				// This is where the food is uploaded to ADD FOOD
+				// Here the food is clicked in the results and then is uploaded to ADD FOOD
 				searchItem.on('click', function(){
+					// addBtn = #foodSubmit
 					addBtn.prop('disabled', false);
 					var name = $(this).find('.searchName').text();
 					var cal = $(this).find('.searchCal').text();
@@ -86,3 +87,6 @@ var App = App || {};
 	});
 
 })();
+
+
+
