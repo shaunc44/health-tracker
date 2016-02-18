@@ -70,6 +70,7 @@ var App = App || {};
 				// Listen to an event. If user clicked on the targeted element then get the element's value
 
 				// Here the food is clicked in the results and then is uploaded to ADD FOOD
+				// How do we know this goes to ADD Food?  
 				searchItem.on('click', function(){
 					// addBtn = #foodSubmit
 					addBtn.prop('disabled', false);
