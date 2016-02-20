@@ -53,28 +53,29 @@
 					<div id="total" class="total-cal"></div>
 
 				<!-- FOOD LIST SECTION -->
-					<h4>What You Ate Today:</h4>
 					<span id="resultAlert" class="searchformAlert">No food selected.</span>
 
 					<div id="addFood" class="addFood-div">
-						<h3>Your Selected Food</h3>
+						<!--<h3>Your Selected Food</h3>-->
 						<div>
-							<h4>Food name:</h4>
-							<div id="FoodName">No selected food</div>
+							<h4>Food Name:</h4>
+							<div id="foodName">No selected food</div>
 						</div>
 						<div>
 							<h4>Calories:</h4>
-							<div id="FoodCal">No selected food</div>
+							<div id="foodCal">No selected food</div>
 						</div>
 						<button id="foodSubmit" class="foodSubmitBtn" disabled>Add food</button>
 					</div>
+
+					<h4>What You Ate Today:</h4>
 
 					<!-- this Section is NOT on the right side, but below the search bar ????; also what the class "delete" do?? -->
 					<div class="foodsList">
 						<script id="foodsListTemplate" type="text/template">
 							<span class="searchName"><%= title %></span>
 							<span class="searchCal"><%= calorie %> Cal.</span>
-							<span class="delete">Delete</span>
+							<span class="delete">X</span>
 						</script>
 					</div>
 			</div>

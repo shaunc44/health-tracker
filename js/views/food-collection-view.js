@@ -17,8 +17,8 @@ var App = App || {};
 		submit: function(e) {
 			e.preventDefault();
 			// Get value from selected food
-			var newFoodName = $('#FoodName').text().toString();
-			var newFoodCal = parseInt($('#FoodCal').text());
+			var newFoodName = $('#foodName').text().toString();
+			var newFoodCal = parseInt($('#foodCal').text());
 
 			// Check if food Calorie is really a number. If it isn't then return
 			if (isNaN(newFoodCal)) {

@@ -76,8 +76,8 @@ var App = App || {};
 					addBtn.prop('disabled', false);
 					var name = $(this).find('.searchName').text();
 					var cal = $(this).find('.searchCal').text();
-					$('#FoodName').text(name);
-					$('#FoodCal').text(cal);
+					$('#foodName').text(name);
+					$('#foodCal').text(cal);
 					return;
 				});
 			}).fail(function(){
