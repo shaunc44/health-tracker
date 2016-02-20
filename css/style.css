@@ -20,7 +20,7 @@ button {
 	border: none;
 	border-radius: 1em;
 	color: #fff;
-	background: #af282e;
+	background: #990099;
 	transition: all 0.3s ease 0s;
 }
 
@@ -36,10 +36,14 @@ body {
 	margin: 0;
 	height: 100%;
 	color: white;
-	text-align: center;
+	text-align: left;
 	text-shadow: 1px 1px 8px black;
 	/*height: 100%;*/
 	background: none;
+}
+
+h1 {
+	font-weight: bold;
 }
 
 .row {
@@ -51,9 +55,13 @@ body {
 	width: 100%;
 }
 
-#total {
+.total {
 	height: 10%;
 	font-size: 30px;
+}
+
+.total div {
+	display: inline;
 }
 
 .list {
@@ -94,9 +102,6 @@ body {
 }*/
 
 .search {
-	/*background: #ffbc3d;*/
-	/*padding: 2em 1em;*/
-	/*float: left;*/
 	height: 100%;
 }
 
@@ -106,7 +111,6 @@ body {
 
 
 .section-info {
-	/*background: #ff9331;*/
 	position: relative;
 	z-index: 2;
 	padding: 20px 0 40px;
@@ -165,8 +169,7 @@ body {
 
 .addFood-div {
 	/*background: #fff;*/
-	padding: 0.5em 2em 2em 2em;
-	text-align: center;
+	padding: 0.2em;
 	margin-bottom: 2em;
 }
 
@@ -176,14 +179,12 @@ body {
 	display: inline;
 }
 
-
-
-/*
 #foodName,
 #foodCal {
-	text-align: right;
+	position: absolute;
+	text-align: left;
+	left: 130px;
 }
-*/
 
 .addFood-div h3 {
 	margin-bottom: 1em;

@@ -36,7 +36,7 @@
 
 
 					<!-- WHEN CLICKED RESULTS SHOULD MOVE TO RT SIDE; HOW??? -->
-					<h4>Search Results</h4>
+					<!--<h4>Search Results</h4>-->
 					<ul class="search-result"></ul>
 				</section>
 			</div>
@@ -48,9 +48,12 @@
 					<div class="total-cal-unit">
 						<h1>Today's Calories</h1>
 					</div>
-					<!-- This is where your Calorie Total should be 
+					<!-- This is where your Calorie Total should be; 
 					  see food-collection.js for script -->
-					<div id="total" class="total-cal"></div>
+					<div class="total">
+						<div id="total" class="total-cal"></div>
+						<div> cal.</div>
+					</div>
 
 				<!-- FOOD LIST SECTION -->
 					<span id="resultAlert" class="searchformAlert">No food selected.</span>
@@ -59,16 +62,16 @@
 						<!--<h3>Your Selected Food</h3>-->
 						<div>
 							<h4>Food Name:</h4>
-							<div id="foodName">No selected food</div>
+							<div id="foodName">No food selected</div>
 						</div>
 						<div>
 							<h4>Calories:</h4>
-							<div id="foodCal">No selected food</div>
+							<div id="foodCal">No food selected</div>
 						</div>
 						<button id="foodSubmit" class="foodSubmitBtn" disabled>Add food</button>
 					</div>
 
-					<h4>What You Ate Today:</h4>
+					<h4>Food You Ate Today:</h4>
 
 					<!-- this Section is NOT on the right side, but below the search bar ????; also what the class "delete" do?? -->
 					<div class="foodsList">
