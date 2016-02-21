@@ -58,6 +58,15 @@ h1 {
 .total {
 	height: 10%;
 	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	text-align: left;
+	left: 50%;
+}
+
+.today-cal h1,
+.today-cal div {
+	display: inline;
 }
 
 .total div {
@@ -78,28 +87,6 @@ h1 {
 .col-md-12 {
 	height: 50%;
 }
-
-/*
-.hero-div-bg {
-	position: absolute;
-	left: 50%;
-	width: 500px;
-	height: 500px;
-	background: rgba(255, 255, 255, 0.9);
-	border-radius: 50%;
-	transform: translate(-50%, 0);
-}
-
-.hero-total-cal {
-	font-size: 8em;
-	font-weight: 500;
-}
-
-.hero-total-cal-unit {
-	margin-top: -20px;
-	font-size: 3em;
-	font-weight: 500;
-}*/
 
 .search {
 	height: 100%;
