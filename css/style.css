@@ -14,6 +14,16 @@ html {
 	background-size: 100% 100%;
 }
 
+body {
+	margin: 0;
+	height: 100%;
+	color: white;
+	text-align: left;
+	text-shadow: 1px 1px 8px black;
+	/*height: 100%;*/
+	background: none;
+}
+
 button {
 	font-size: 1.2em;
 	padding: 0.5em 1em;
@@ -30,16 +40,6 @@ button:hover {
 
 button:disabled {
 	background: #dddddd;
-}
-
-body {
-	margin: 0;
-	height: 100%;
-	color: white;
-	text-align: left;
-	text-shadow: 1px 1px 8px black;
-	/*height: 100%;*/
-	background: none;
 }
 
 h1 {
@@ -81,6 +81,11 @@ h1 {
 
 .col-md-6 {
 	height: 100%;
+}
+
+.col-md-9,
+.col-md-3 {
+	padding: 0;
 }
 
 .total,
@@ -155,8 +160,8 @@ h1 {
 }
 
 .addFood-div {
-	/*background: #fff;*/
-	padding: 0.2em;
+	/*background: #fff;
+	padding: 0.2em;*/
 	margin-bottom: 2em;
 }
 
@@ -178,7 +183,7 @@ h1 {
 }
 
 .foodSubmitBtn {
-	margin-top: 2em;
+	margin-top: 0.2em;
 	width: 150px;
 }
 
