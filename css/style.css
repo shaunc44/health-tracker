@@ -40,6 +40,8 @@ button:hover {
 
 button:disabled {
 	background: #dddddd;
+	color: #990099;
+	font-weight: bold;
 }
 
 h1 {
