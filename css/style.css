@@ -47,11 +47,6 @@ h1 {
 }
 
 .row {
-	/*background: url(../img/food.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	min-height: 100%;*/
 	width: 100%;
 }
 
@@ -64,6 +59,10 @@ h1 {
 	left: 50%;
 }
 
+.today-cal {
+	margin: 20px 0 10px 0;
+}
+
 .today-cal h1,
 .today-cal div {
 	display: inline;
@@ -74,7 +73,6 @@ h1 {
 }
 
 .list {
-	/*background: #ffbc3d;*/
 	padding: 1em;
 	height: 100%;
 }
@@ -86,11 +84,7 @@ h1 {
 .col-md-9,
 .col-md-3 {
 	padding: 0;
-}
-
-.total,
-.col-md-12 {
-	height: 50%;
+	margin-bottom: 2.0em;
 }
 
 .search {
@@ -98,7 +92,7 @@ h1 {
 }
 
 .searchform {
-	margin-bottom: 2em;
+	margin-bottom: 2.0em;
 }
 
 
@@ -111,9 +105,9 @@ h1 {
 .searchfield {
 	width: 100%;
 	font-size: 1.2em;
-	padding: 0.5em 1em;
+	padding: 0.5em 1.0em;
 	border: none;
-	border-radius: 1em;
+	border-radius: 1.0em;
 	color: black;
 }
 
