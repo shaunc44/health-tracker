@@ -145,12 +145,13 @@ h1 {
 
 .searchName {
 	display: inline-block;
-	width: 75%;
+	width: 85%;
 }
 
 .searchCal {
 	display: inline-block;
-	float: right;
+	/*float: right;*/
+	right: 10px;
 }
 
 .addFood-div {
@@ -201,6 +202,8 @@ h1 {
 	/*text-align: right;*/
 	color: #af282e;
 	cursor: pointer;
+	float: right;
+	right: 5px;
 }
 
 @media only screen and (min-width: 768px) {
