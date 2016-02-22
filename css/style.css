@@ -145,6 +145,10 @@ h1 {
 	background: rgba(255, 255, 255, 1);
 }
 
+.search-result .searchCal {
+	float: right;
+}
+
 .searchName {
 	display: inline-block;
 	width: 85%;
@@ -153,7 +157,11 @@ h1 {
 .searchCal {
 	display: inline-block;
 	/*float: right;*/
-	right: 10px;
+	/*this is needed to keep search result cals aligned on right but it messes up the selected results on the right; add css to selected result classes
+	*/
+	right: 5px;
+	text-align: right;
+	width: 10%;
 }
 
 .addFood-div {
