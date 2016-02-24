@@ -29,14 +29,15 @@
 				<section class="search">
 					<h1>The Calorie Tracker</h1>
 					<form action="" class="searchform">
-						<input type="text" id="searchfield" class="searchfield" placeholder="Enter food here">
+						<input type="text" id="searchfield" class="searchfield" placeholder="* Enter Food Here *">
 						<button type="submit" id="searchBtn" class="searchBtn">Search</button>
+						<!-- this alert may be a project requirement and the one below as well -->
 						<span id="searchformAlert" class="searchformAlert"></span>
 					</form>
 
 
 					<!-- WHEN CLICKED RESULTS SHOULD MOVE TO RT SIDE; HOW??? -->
-					<h4>Search Results</h4>
+					<h3>Search Results</h3>
 					<ul class="search-result"></ul>
 				</section>
 			</div>
@@ -45,52 +46,49 @@
 			<!-- RIGHT HALF OF PAGE -->
 			<div class="col-md-6">
 				<!-- CALORIE TOTAL SECTION -->
-					<div class="today-cal">
-						<h1>Total Calories</h1>
-						<!-- This is where your Calorie Total should be; 
-						  see food-collection.js for script -->
-						<div class="total">
-							<!-- delete the total and total-cal divs -->
-							<div id="total" class="total-cal"></div>
-							<div> cal.</div>
+				<div class="today-cal">
+					<h1>Total Calories</h1>
+					<!-- This is where your Calorie Total should be; 
+					  see food-collection.js for script -->
+					<div class="total">
+						<!-- delete the total and total-cal divs -->
+						<div id="total" class="total-cal"></div>
+						<div> cal.</div>
+					</div>
+				</div>
+
+			<!-- FOOD LIST SECTION -->
+				<!--<span id="resultAlert" class="searchformAlert">No food selected.</span>
+				-->
+				<div id="addFood" class="addFood-div">
+					<!--<h3>Your Selected Food</h3>-->
+					<div class="col-md-9">
+						<div>
+							<h4>Food Name:</h4>
+							<div id="foodName">NO FOOD SELECTED</div>
+						</div>
+						<div>
+							<h4>Calories:</h4>
+							<div id="foodCal">NO FOOD SELECTED</div>
 						</div>
 					</div>
-
-				<!-- FOOD LIST SECTION -->
-					<span id="resultAlert" class="searchformAlert">No food selected.</span>
-
-					<div id="addFood" class="addFood-div">
-						<!--<h3>Your Selected Food</h3>-->
-						<div class="col-md-9">
-							<div>
-								<h4>Food Name:</h4>
-								<div id="foodName">No food selected</div>
-							</div>
-							<div>
-								<h4>Calories:</h4>
-								<div id="foodCal">No food selected</div>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div>
-								<button id="foodSubmit" class="foodSubmitBtn" disabled>Add Food</button>
-							</div>
+					<div class="col-md-3">
+						<div>
+							<button id="foodSubmit" class="foodSubmitBtn" disabled>Add Food</button>
 						</div>
 					</div>
+				</div>
 
-					<h4>Selected Food</h4>
+				<h3>Selected Food</h3>
 
-					<!-- this Section is NOT on the right side, but below the search bar ????; also what the class "delete" do?? -->
-					<div class="foodsList">
-						<script id="foodsListTemplate" type="text/template">
-							<span class="searchName"><%= title %></span>
-							<span class="searchCal"><%= calorie %> Cal.</span>
-							<span class="delete">X</span>
-						</script>
-					</div>
+				<div class="foodsList">
+					<script id="foodsListTemplate" type="text/template">
+						<span class="searchName"><%= title %></span>
+						<span class="searchCal"><%= calorie %> Cal.</span>
+						<span class="delete">X</span>
+					</script>
+				</div>
 			</div>
-
-
 		</div>
 	</div>
 
