@@ -74,11 +74,31 @@ var App = App || {};
 				total += parseInt(elem.get('calorie'));
 			}, this);
 
-			// Show total number
+			// Show total calories
 			this.$el.text(total);
+
+			//this.$el(total);
+
+			// Convert total to number with commas
+			/*
+			function formatTotal (num) {
+				return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
+			}
+			var formattedTotal = formatTotal(this);
+			return formattedTotal;
+			*/
 
 			return this;
 		}
 	});
 
 })();
+
+
+
+
+
+
+
+
+

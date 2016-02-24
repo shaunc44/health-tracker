@@ -46,6 +46,7 @@ button:disabled {
 
 h1 {
 	font-weight: bold;
+	text-shadow: 2px 2px 2px black;
 }
 
 .row {
@@ -54,10 +55,11 @@ h1 {
 
 .total {
 	height: 10%;
-	font-size: 30px;
+	font-size: 35px;
 	font-weight: bold;
 	position: absolute;
 	text-align: left;
+	text-shadow: 2px 2px 2px black;
 	left: 50%;
 }
 
