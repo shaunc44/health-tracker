@@ -150,8 +150,8 @@ h3 {
 
 .search-result li {
 	background: rgba(255, 255, 255, 0.6);
-	padding: 0.2em;
-	margin-bottom: 0.4em;
+	padding: 0.3em;
+	/*margin-bottom: 0.4em;*/
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 	text-align: left;
@@ -228,19 +228,31 @@ h3 {
 	display: inline-block;
 	text-align: left;
 	background: rgba(255, 255, 255, 0.6);
-	padding: 0.2em;
-	margin-bottom: 0.4em;
+	padding: 0.3em;
+	/*margin-bottom: 0.4em;*/
 	transition: all 0.3s ease 0s;
 	width: 100%;
+	color: #660066;
+	text-shadow: none;
+	font-weight: 900;
+	/*vertical-align: top;*/
 }
+
+/*
+.search-item .searchCal {
+	float: right;
+}
+*/
 
 .delete {
 	display: inline-block;
 	/*text-align: right;*/
 	color: #af282e;
+	font-weight: bold;
 	cursor: pointer;
 	float: right;
 	right: 5px;
+	vertical-align: top;
 }
 
 @media only screen and (min-width: 768px) {
