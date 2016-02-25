@@ -49,6 +49,11 @@ h1 {
 	text-shadow: 2px 2px 2px black;
 }
 
+.search h1 {
+	height: 50px;
+	line-height: 1.42857143;
+}
+
 h3 {
 	text-shadow: 2px 2px 2px black;
 	font-family: 'PT Serif', serif;
@@ -59,17 +64,19 @@ h3 {
 }
 
 .total {
-	height: 10%;
-	font-size: 35px;
+	/*height: 10%;*/
+	font-size: 36px;
 	font-weight: bold;
-	position: absolute;
+	position: relative;
 	text-align: left;
 	text-shadow: 2px 2px 2px black;
-	left: 50%;
+	left: 2%;
 }
 
 .today-cal {
+	position: relative;
 	margin: 20px 0 10px 0;
+	height: 50px;
 }
 
 .today-cal h1,
