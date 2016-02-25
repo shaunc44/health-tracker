@@ -11,7 +11,9 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover; 
-	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*background-size: 100% 100%;*/
 }
 
 body {
@@ -182,9 +184,10 @@ h3 {
 }
 
 .addFood-div {
+	height: 40px;
 	/*background: #fff;
-	padding: 0.2em;*/
-	margin-bottom: 2em;
+	padding: 0.2em;
+	margin-bottom: 2em;*/
 }
 
 .addFood-div h4,
