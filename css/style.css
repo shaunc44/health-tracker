@@ -34,6 +34,7 @@ button {
 	color: #fff;
 	background: #990099;
 	transition: all 0.3s ease 0s;
+	white-space: nowrap;
 }
 
 button:hover {
@@ -53,7 +54,7 @@ h1 {
 		2px -2px 0 #333333,
 		-2px 2px 0 #333333,
 		2px 2px 0 #333333;
-	color: #99ff99;
+	color: #f2f2f2;
 }
 
 .search h1 {
@@ -135,7 +136,7 @@ h4 {
 
 .col-md-3 {
 	width: 25%;
-	padding-left: 20px;
+	padding-left: 10px;
 	max-height: 40px;
 }
 
@@ -241,7 +242,6 @@ h4 {
 	position: absolute;
 	text-align: left;
 	left: 110px;
-	max-width: 75%;
 }
 
 .addFood-div h3 {
@@ -326,6 +326,27 @@ h4 {
 	.hero-div {
 		padding-top: 200px;
 	}
+	#foodName,
+	#foodCal {
+		width: 75%;
+	}
 }
+
+
+@media only screen and (min-width: 1540px) {
+	#foodName,
+	#foodCal {
+		width: 80%;
+	}
+}
+
+
+@media only screen and (min-width: 1800px) {
+	#foodName,
+	#foodCal {
+		width: 85%;
+	}
+}
+
 
 
