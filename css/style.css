@@ -171,13 +171,6 @@ h4 {
 	margin: 10px auto;
 }
 
-/*
-.searchformAlert {
-	display: inline-block;
-	margin: 1.0em 0;
-}
-*/
-
 .search-result {
 	list-style: none;
 	padding: 0;
@@ -215,7 +208,7 @@ h4 {
 	*/
 	right: 5px;
 	text-align: right;
-	width: 65px;
+	width: 10%;
 }
 
 .addFood-div {
@@ -275,12 +268,6 @@ h4 {
 	float: left;
 }
 
-/*
-.search-item .searchCal {
-	float: right;
-}
-*/
-
 .delete {
 	display: inline-block;
 	/*text-align: right;*/
@@ -293,36 +280,68 @@ h4 {
 }
 
 @media only screen and (min-width: 768px) {
-	/*
-	.hero-div {
-		padding-top: 150px;
-	}
-	*/
-
 	.section-info {
 		padding-top: 40px;
 	}
-
 	.searchfield {
 		width: 70%;
 	}
-
 	.searchBtn {
 		display: inline;
 		width: 25%;
 		margin: 0 0 0 10px;
 	}
-}
-
-@media only screen and (min-width: 768px) {
 	#foodName,
 	#foodCal {
 		width: 70%;
 	}
-	.searchCal {
-		width: 80px;
+	.selectedItem .searchName {
+		width: 70%;
+	}
+	.selectedItem .searchCal {
+		width: 20%;
 	}
 }
+
+@media only screen and (min-width: 1224px) {
+	#foodName,
+	#foodCal {
+		width: 75%;
+	}
+	.selectedItem .searchName {
+		width: 75%;
+	}
+	.selectedItem .searchCal {
+		width: 15%;
+	}
+}
+
+@media only screen and (min-width: 1540px) {
+	#foodName,
+	#foodCal {
+		width: 80%;
+	}
+	.selectedItem .searchName {
+		width: 80%;
+	}
+	.selectedItem .searchCal {
+		width: 15%;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#foodName,
+	#foodCal {
+		width: 85%;
+	}
+	.selectedItem .searchName {
+		width: 82.5%;
+	}
+	.selectedItem .searchCal {
+		width: 15%;
+	}
+}
+
 
 /*
 @media only screen and (min-width: 1224px) {
@@ -344,35 +363,3 @@ h4 {
 	}
 }
 */
-
-@media only screen and (min-width: 1224px) {
-	#foodName,
-	#foodCal {
-		width: 75%;
-	}
-	.searchName {
-		width: 80%;
-	}
-	.searchCal {
-		width: 90px;
-	}
-}
-
-
-@media only screen and (min-width: 1540px) {
-	#foodName,
-	#foodCal {
-		width: 80%;
-	}
-}
-
-
-@media only screen and (min-width: 1800px) {
-	#foodName,
-	#foodCal {
-		width: 85%;
-	}
-}
-
-
-
