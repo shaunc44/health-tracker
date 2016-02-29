@@ -211,6 +211,10 @@ h4 {
 	width: 10%;
 }
 
+.selected-item .searchCal {
+	right: 0;
+}
+
 .addFood-div {
 	height: 40px;
 	/*background: #fff;
@@ -295,11 +299,11 @@ h4 {
 	#foodCal {
 		width: 70%;
 	}
-	.selectedItem .searchName {
+	.searchName {
 		width: 70%;
 	}
-	.selectedItem .searchCal {
-		width: 20%;
+	.searchCal {
+		width: 25%;
 	}
 }
 
@@ -308,11 +312,11 @@ h4 {
 	#foodCal {
 		width: 75%;
 	}
-	.selectedItem .searchName {
+	.searchName {
 		width: 75%;
 	}
-	.selectedItem .searchCal {
-		width: 15%;
+	.searchCal {
+		width: 22.5%;
 	}
 }
 
@@ -321,10 +325,10 @@ h4 {
 	#foodCal {
 		width: 80%;
 	}
-	.selectedItem .searchName {
-		width: 80%;
+	.searchName {
+		width: 82.5%;
 	}
-	.selectedItem .searchCal {
+	 .searchCal {
 		width: 15%;
 	}
 }
@@ -334,11 +338,11 @@ h4 {
 	#foodCal {
 		width: 85%;
 	}
-	.selectedItem .searchName {
-		width: 82.5%;
+	 .searchName {
+		width: 85%;
 	}
-	.selectedItem .searchCal {
-		width: 15%;
+	 .searchCal {
+		width: 12.5%;
 	}
 }
 
