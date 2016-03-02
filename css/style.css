@@ -144,11 +144,11 @@ h4 {
 	height: 100%;
 }
 
-/*
+
 .searchform {
 	margin-bottom: 2.0em;
 }
-*/
+
 
 .section-info {
 	position: relative;
@@ -167,8 +167,8 @@ h4 {
 
 .searchBtn {
 	display: block;
-	width: 120px;
-	margin: 10px auto;
+	width: 100%;
+	/*margin: 10px auto;*/
 }
 
 .search-result {
@@ -284,14 +284,6 @@ h4 {
 	right: 5px;
 }
 
-@media only screen and (max-width: 700px) {
-	.col-md-3 {
-		width: 30%;
-	}
-
-
-}
-
 @media only screen and (min-width: 0px) {
 	.section-info {
 		padding-top: 40px;
@@ -301,8 +293,10 @@ h4 {
 	}
 	.searchBtn {
 		display: inline;
+		/*
 		width: 25%;
 		margin: 0 0 0 10px;
+		*/
 	}
 	#foodName,
 	#foodCal {
@@ -318,6 +312,17 @@ h4 {
 	.col-md-3 {
 		float: left;
 	}
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.col-md-9 {
+		width: 75%;
+	}
+	.col-md-3 {
+		width: 25%;
+	}
+
 }
 
 @media only screen and (min-width: 1224px) {
