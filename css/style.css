@@ -294,16 +294,17 @@ h4 {
 	right: 5px;
 }
 
+
+/*--------------------------------------------------------\
+|------------------ RESPONSIVE STYLING -------------------|
+\--------------------------------------------------------*/
+
 @media only screen and (min-width: 0px) {
 	.section-info {
 		padding-top: 40px;
 	}
 	.searchBtn {
 		display: inline;
-		/*
-		width: 25%;
-		margin: 0 0 0 10px;
-		*/
 	}
 	#foodName,
 	#foodCal {
@@ -321,6 +322,19 @@ h4 {
 	}
 }
 
+@media only screen and (max-width: 650px) {
+	h1,
+	.total {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.searchfield,
+	.searchBtn {
+		height: 33.33px;
+	}
+}
 
 @media only screen and (max-width: 992px) {
 	.col-md-9 {
@@ -329,7 +343,6 @@ h4 {
 	.col-md-3 {
 		width: 25%;
 	}
-
 }
 
 @media only screen and (min-width: 1224px) {
