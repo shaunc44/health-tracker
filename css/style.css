@@ -327,12 +327,31 @@ h4 {
 	.total {
 		font-size: 30px;
 	}
+	.search h1,
+	.today-cal {
+		height: 42px;
+		text-align: center;
+	}
 	h3 {
 		font-size: 20px;
+		margin-top: 10px;
+	}
+	h4 {
+		font-size: 15px;
+	}
+	button {
+		font-size: 1em;
 	}
 	.searchfield,
 	.searchBtn {
 		height: 33.33px;
+	}
+	.searchform {
+		margin-bottom: 0;
+	}
+	#foodName,
+	#foodCal {
+		font-size: 11.5px;
 	}
 }
 
