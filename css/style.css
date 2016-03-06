@@ -322,15 +322,28 @@ h4 {
 	}
 }
 
-@media only screen and (max-width: 650px) {
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+	h1,
+	.total {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 650px) {
 	h1,
 	.total {
 		font-size: 30px;
 	}
+}
+
+@media only screen and (max-width: 650px) {
+	body {
+		font-size: 12px;
+	}
 	.search h1,
 	.today-cal {
 		height: 42px;
-		text-align: center;
 	}
 	h3 {
 		font-size: 20px;
@@ -361,6 +374,10 @@ h4 {
 	}
 	.col-md-3 {
 		width: 25%;
+	}
+	.search h1,
+	.today-cal {
+		text-align: center;
 	}
 }
 
