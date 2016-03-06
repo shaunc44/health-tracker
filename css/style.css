@@ -325,6 +325,9 @@ h4 {
 
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
+	.container-fluid {
+		padding: 0;
+	}
 	h1,
 	.total {
 		font-size: 24px;
@@ -339,6 +342,16 @@ h4 {
 		font-size: 17px;
 		margin-top: 10px;
 	}
+	.searchform,
+	.addFood-div {
+		height: 34px;
+	}
+	/*
+	#foodName,
+	#foodCal {
+		left: 90px;
+	}
+	*/
 }
 
 @media only screen and (min-width: 481px) and (max-width: 650px) {
@@ -384,6 +397,7 @@ h4 {
 	#foodName,
 	#foodCal {
 		font-size: 11.5px;
+		left: 90px;
 	}
 }
 
