@@ -13,7 +13,6 @@ html {
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	/*background-size: 100% 100%;*/
 }
 
 body {
@@ -22,7 +21,6 @@ body {
 	color: white;
 	text-align: left;
 	text-shadow: 1px 1px 8px black;
-	/*height: 100%;*/
 	background: none;
 }
 
@@ -296,9 +294,9 @@ h4 {
 }
 
 
-/*--------------------------------------------------------\
-|------------------ RESPONSIVE STYLING -------------------|
-\--------------------------------------------------------*/
+/*-------------------------------------------------------------\
+|--------------------- RESPONSIVE STYLING ---------------------|
+\-------------------------------------------------------------*/
 
 @media only screen and (min-width: 0px) {
 	.section-info {
