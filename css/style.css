@@ -342,16 +342,26 @@ h4 {
 		font-size: 17px;
 		margin-top: 10px;
 	}
+	h4 {
+		font-size: 12.5px;
+	}
 	.searchform,
 	.addFood-div {
 		height: 34px;
 	}
-	/*
 	#foodName,
 	#foodCal {
-		left: 90px;
+		left: 75px;
 	}
-	*/
+	.foodSubmitBtn {
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.searchName,
+	.searchCal,
+	.delete {
+		font-size: 11px;
+	}
 }
 
 @media only screen and (min-width: 481px) and (max-width: 650px) {
@@ -369,27 +379,26 @@ h4 {
 		font-size: 20px;
 		margin-top: 10px;
 	}
+	h4 {
+		font-size: 15px;
+	}
+	#foodName,
+	#foodCal {
+		left: 90px;
+	}
 }
 
 @media only screen and (max-width: 650px) {
 	body {
 		font-size: 12px;
 	}
-	/*
-	.search h1,
-	.today-cal {
-		height: 42px;
-	}
-	*/
-	h4 {
-		font-size: 15px;
-	}
 	button {
 		font-size: 1em;
 	}
 	.searchfield,
-	.searchBtn {
-		height: 33.33px;
+	.searchBtn,
+	.foodSubmitBtn {
+		height: 34px;
 	}
 	.searchform {
 		margin-bottom: 0;
@@ -397,7 +406,6 @@ h4 {
 	#foodName,
 	#foodCal {
 		font-size: 11.5px;
-		left: 90px;
 	}
 }
 
