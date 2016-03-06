@@ -73,6 +73,7 @@ h4 {
 
 .row {
 	width: 100%;
+	margin: 0;
 }
 
 .total {
@@ -323,17 +324,37 @@ h4 {
 }
 
 
-@media only screen and (min-width: 0px) and (max-width: 479px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
 	h1,
 	.total {
 		font-size: 24px;
 	}
+	.search h1,
+	.today-cal {
+		margin-top: 13px;
+		margin-bottom: 6.5px;
+		height: 34px;
+	}
+	h3 {
+		font-size: 17px;
+		margin-top: 10px;
+	}
 }
 
-@media only screen and (min-width: 480px) and (max-width: 650px) {
+@media only screen and (min-width: 481px) and (max-width: 650px) {
 	h1,
 	.total {
 		font-size: 30px;
+	}
+	.search h1,
+	.today-cal {
+		margin-top: 16px;
+		margin-bottom: 8px;
+		height: 42px;
+	}
+	h3 {
+		font-size: 20px;
+		margin-top: 10px;
 	}
 }
 
@@ -341,14 +362,12 @@ h4 {
 	body {
 		font-size: 12px;
 	}
+	/*
 	.search h1,
 	.today-cal {
 		height: 42px;
 	}
-	h3 {
-		font-size: 20px;
-		margin-top: 10px;
-	}
+	*/
 	h4 {
 		font-size: 15px;
 	}
