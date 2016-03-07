@@ -1,12 +1,12 @@
-/*global Backbone */
+/*Global Backbone */
 var App = App || {};
 
 (function () {
 
-	// Create Search result list
+	// Create Search Result List
 	App.Views.SearchResult = Backbone.View.extend({
 
-		// Cache common element use in this view.
+		// Cache common elements used in this view
 		element: {
 			searchBtn: $('#searchBtn'),
 			searchKey: $('#searchfield'),
@@ -17,14 +17,14 @@ var App = App || {};
 			var self = this;
 			this.element.searchBtn.on('click', function(e){
 				e.preventDefault();
-				// Preparing the keyword
+				// Prepare the search word
 				var keyword = $.trim(self.element.searchKey.val()).toLowerCase();
-				// Check if user provide a keyword or not; This doesn't work
+				// Check if user provides a valid search word
 				if (!keyword) {
 					self.element.searchformAlert.text('Please insert search keyword.');
 					return;
 				}
-				// Remove the message that tells user to type a keyword
+				// Remove the message that tells user to type a search word
 				self.element.searchformAlert.text('');
 				// Firing an AJAX request
 				self.getAJAX(keyword);
@@ -34,7 +34,6 @@ var App = App || {};
 		getAJAX: function(keyword){
 			var self = this;
 			var searchUL = $('.search-result');
-
 			searchUL.html('<p>Now Loading...</p>');
 
 			$.ajax({
@@ -48,15 +47,15 @@ var App = App || {};
 				var addBtn = $('#foodSubmit');
 				var searchItemHTML = '';
 
-				// tell the user if no food found
+				// Notify the user that the search word is invalid
 				if (data.hits.length <= 0) {
-					var searchNotfound = '<p>Not found any food from keyword: ' + keyword + '</p>';
+					var searchNotfound = '<p>Unable to locate food by the name of "'
+						+ keyword + '".  Please enter a valid food.</p>';
 					searchUL.html(searchNotfound);
 					return;
 				}
 
 				// Iterate through each food object and get the data from it
-				// And create the searchItem and searchName CLASSES ***
 				for (var i = 0; i < data.hits.length; i++) {
 					searchItemHTML += '<li class="searchItem"><span class="searchName">' + data.hits[i].fields.item_name +
 						', ' + data.hits[i].fields.brand_name +
@@ -64,13 +63,12 @@ var App = App || {};
 						Math.round(data.hits[i].fields.nf_calories) +
 						' Cal. </span></li>';
 				}
-				// Insert to the DOM.
+
+				// Update the DOM
 				searchUL.html(searchItemHTML);
 				var searchItem = $('.searchItem');
-				// Listen to an event. If user clicked on the targeted element then get the element's value
-
-				// Here the food is clicked in the results and then is uploaded to ADD FOOD
-				// How do we know this goes to ADD Food?  
+				// If user clicks on targeted element then acquire the element's value
+				// Food is clicked in the results and then uploaded to ADD FOOD
 				searchItem.on('click', function(){
 					// addBtn = #foodSubmit
 					addBtn.prop('disabled', false);
@@ -81,13 +79,9 @@ var App = App || {};
 					return;
 				});
 			}).fail(function(){
-				// If AJAX request fails then tell the user.
-				searchUL.html('<p>There is an error getting food information. Please try again later.</p>');
+				// If AJAX request fails then notify the user.
+				searchUL.html('<p>There is an error locating your food information. Please try again later.</p>');
 			});
 		}
 	});
-
 })();
-
-
-

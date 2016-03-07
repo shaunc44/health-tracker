@@ -1,15 +1,13 @@
-/*global Backbone */
+/*Global Backbone */
 var App = App || {};
 
 (function () {
 
-
-	// Create Add food View - adds food in lower right part of page
-	// Try to remove this view and connect searchItem.on from search.js to the App.Views.Foods view
+	// Create Add food View
 	App.Views.AddFood = Backbone.View.extend({
 		el: '#addFood',
 
-		// Fire event when clicked on element with id foodSubmit
+		// Fire event when element with id 'foodSubmit' is clicked
 		events: {
 			'click #foodSubmit' : 'submit'
 		},
@@ -20,12 +18,12 @@ var App = App || {};
 			var newFoodName = $('#foodName').text().toString();
 			var newFoodCal = parseInt($('#foodCal').text());
 
-			// Check if food Calorie is really a number. If it isn't then return
+			// Check if food calorie is a number; If it isn't then return
 			if (isNaN(newFoodCal)) {
 				return;
 			}
 
-			// Add food model with data above to the collection.
+			// Add food model with above data to the collection
 			var food = new App.Models.Food({title: newFoodName, calorie: newFoodCal}, {validate: true});
 			this.collection.add(food);
 			// Add to localstorage
@@ -48,7 +46,7 @@ var App = App || {};
 			this.collection.each(this.addOne, this);
 			return this;
 		},
-		// Method to add new model and append to the DOM.
+		// Method to add a new model and append to the DOM.
 		addOne: function(food){
 			$('#resultAlert').hide();
 			var foodView = new App.Views.Food ({model: food});
@@ -91,7 +89,6 @@ var App = App || {};
 			return this;
 		}
 	});
-
 })();
 
 

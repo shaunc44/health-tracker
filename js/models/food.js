@@ -1,4 +1,4 @@
-/*global Backbone */
+/*Global Backbone */
 var App = App || {};
 
 (function () {
@@ -9,13 +9,14 @@ var App = App || {};
 			title: '',
 			calorie: 0
 		},
+
 		// Validation for every food model must have name and calorie
 		validate: function(attrs){
 			if(! $.trim(attrs.title)) {
-				return 'Must provide Food name';
+				return 'Must provide the food name';
 			}
 			if(! $.trim(attrs.calorie)) {
-				return 'Must provide food calorie';
+				return 'Must provide the food calorie';
 			}
 		}
 	});
