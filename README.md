@@ -1,61 +1,42 @@
 ##HEALTH TRACKER
 ####*UDACITY - FRONT-END WEB DEVELOPER NANODEGREE*
 #####PROJECT 5-2
-In this project I designed a website that tracks calories of various
-foods entered into the search box. The site then tabulates total
-calories of all foods entered.
+In this project I designed a website that tracks the calories of 
+various foods and beverages entered into the search bar and then 
+selected from the search results list. The site then 
+tabulates total calories of all foods or drinks entered.
 
 =================================================================
 
 
-
-###OVERVIEW OF TESTS
+###INSTRUCTIONS
 -----------------------------------------------------------------
-1.	The first tests determine whether the feeds are defined and
-	if they have URLs and names.
-2.	The next set of tests examine whether the menu changes
-	visiblity when clicked.
-3.	Lastly, I test that the container has at least one feed and
-	also confirm that new feeds are loaded.
-
-
-###TEST INSTRUCTIONS
------------------------------------------------------------------
-#####RSS FEEDS:
-	Test 1:	Comment out the 'allFeeds' array in app.js. This will
-			cause the test to fail while prompting the error 
-			message, "Expected 0 not to be 0".
-	Test 2:	Empty one of the URLs in the 'allFeeds' array in
-			app.js. The test will fail with an error message of
-			"Expected 0 not to be 0".
-	Test 3:	This time empty one of the names in the 'allFeeds' array
-			in app.js. The test will fail with an error message of
-			"Expected 0 not to be 0".
-#####THE MENU:
-	Test 4:	In the index.html file, delete the menu-hidden class.
-			In the webpage, the menu will not be hidden by
-			default and you will see an error message of
-			"Expected false to be true".
-	Test 5:	In the index.html file, delete the menu-icon-link
-			class. In the webpage, the menu will not toggle
-			open or close and you will see an error message of
-			"Expected true to be false".
-#####INITIAL ENTRIES:
-	Test 6:	Delete the 'entry' class in index.html. The test
-			will fail with an error message of "Expected 0 to
-			be greater than 0".
-#####NEW FEED SELECTION:
-	Test 7:	For the last test, please go app.js and comment out
-			the content of the loadFeed() function which will
-			cause the New Feed Selection test to fail with an
-			error message of "Error: Timeout".
+#####SEARCH BAR:
+	Enter any food and click "Search". Be sure that it's spelled
+	correctly or you may prompt an error.
+#####SEARCH RESULTS:
+	In the food results, click the food that you want to add to 
+	your running total on the right-hand side of the screen where 
+	it says, "Selected Food".
+#####TOTAL CALORIES: 
+	This section shows the caloric total of all foods selected.
+#####FOOD NAME / CALORIES:
+	This section displays the most recent food selected from the 
+	search results (left-hand side of the screen).
+#####ADD FOOD BUTTON: 
+	Click the ADD FOOD button to move the selected food's calories 
+	to your running total.
+#####SELECTED FOOD:
+	Here you will find the list of all of the foods you have 
+	selected. To delete a food, click the red "X" to the right 
+	of each food's caloric number.
 
 
 ###INSTALLATION
 -----------------------------------------------------------------
 Open index.html in your favorite web browser, such as Chrome or
-Firefox, or visit the live [website.]
-(shaunc44.github.io/Feed-Reader-Testing/) Cheers!
+Firefox, or visit the live [Calorie Tracker].
+(shaunc44.github.io/health-tracker/) Cheers and Happy Eating!
 
 
 ###SUPPORT
