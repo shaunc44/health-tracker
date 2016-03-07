@@ -35,7 +35,7 @@ tabulates total calories of all foods or drinks entered.
 ###INSTALLATION
 -----------------------------------------------------------------
 Open index.html in your favorite web browser, such as Chrome or
-Firefox, or visit the live [Calorie Tracker].
+Firefox, or visit the live [Calorie Tracker.]
 (https://shaunc44.github.io/health-tracker/) Cheers and Happy Eating!
 
 
