@@ -93,10 +93,12 @@ h1 {
 		2px 2px 0 #333333;
 }
 
+/*
 .container-fluid {
 	position: fixed;
 	z-index: -1;
 }
+*/
 
 .search h1 {
 	height: 50px;
