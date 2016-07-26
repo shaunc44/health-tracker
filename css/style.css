@@ -5,6 +5,7 @@
 	box-sizing: border-box;
 }
 
+/*
 body:before {
 	content: "";
 	display: block;
@@ -21,9 +22,9 @@ body:before {
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-}
+}*/
 
-/*
+
 html {
 	background: url(../img/food.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -32,7 +33,7 @@ html {
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-}*/
+}
 
 body {
 	margin: 0;
@@ -304,6 +305,13 @@ h4 {
 		float: left;
 	}
 }
+
+/*
+@media screen and (max-device-width: 1024px) {
+	html {
+		background-attachment: scroll;
+	}
+}*/
 
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
