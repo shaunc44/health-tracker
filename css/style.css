@@ -333,13 +333,20 @@ h4 {
 
 
 @media screen and (max-width: 1024px) {
-	/*
+	/* This fixes the screen and doesn't allow down scrolling
 	html {
 		position: fixed;
 		z-index: -1;
-	}*/
+	*/
 	html {
+		background-size: 1024px;
+		/*
+		background-position: fixed;
+		
 		background-attachment: scroll;
+		Cuts off bottom of background image
+		background-attachment: scroll;
+		*/
 	}
 }
 
