@@ -333,13 +333,18 @@ h4 {
 
 
 @media screen and (max-width: 1024px) {
-	/* This fixes the screen and doesn't allow down scrolling
 	html {
-		position: fixed;
-		z-index: -1;
-	*/
+		background: none;
+		-webkit-background-size: none;
+		-moz-background-size: none;
+		-o-background-size: none;
+		background-size: none; 
+		background-repeat: none;
+		background-attachment: none;
+	}
+
 	#background {
-		position:fixed;
+		position:relative;
 		top:0;
 		left:0;
 		width:100%;
@@ -347,6 +352,11 @@ h4 {
 		background: url(../img/food.jpg) 0 0 no-repeat fixed !important;
 		background-size: contain;
 	}
+/*
+	#info {
+		position: scroll;
+	}
+*/
 }
 
 
