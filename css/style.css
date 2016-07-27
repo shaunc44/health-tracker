@@ -331,14 +331,14 @@ h4 {
 	}
 }
 
-/*
-@media screen and (max-device-width: 1024px) {
+
+@media screen and (max-width: 1024px) {
 	html {
-		background-attachment: scroll;
-		background-size: none;
+		position: fixed;
+		z-index: -1;
 	}
 }
-*/
+
 
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 	.container-fluid {
