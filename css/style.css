@@ -333,9 +333,13 @@ h4 {
 
 
 @media screen and (max-width: 1024px) {
+	/*
 	html {
 		position: fixed;
 		z-index: -1;
+	}*/
+	html {
+		background-attachment: scroll;
 	}
 }
 
